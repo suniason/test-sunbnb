@@ -20,14 +20,14 @@ jobs:
       - name: PHP Version
         run: php --version
 
-      - name: Check folder
-        run: pwd && ls
+      - name: Redirect to backend folder
+        run: pwd
 
       - name: Install Dependencies
-        run: composer install
+        run: cd backend && pwd && ls && composer install
 
       - name: Run Pint
-        run: backend/vendor/bin/pint --test -v
+        run: vendor/bin/pint --test -v
 
   nextjs-tests:
     runs-on: ubuntu-latest
