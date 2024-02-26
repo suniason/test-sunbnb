@@ -44,7 +44,9 @@ jobs:
         run: npm i -g npm@latest
 
       - name: "install dependencies"
-        run: cd frontend && npm ci
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: frontend
 
       - name: "lint code"
         run: cd frontend && npm run lint --if-present
