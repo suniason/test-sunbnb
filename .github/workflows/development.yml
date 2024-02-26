@@ -43,11 +43,8 @@ jobs:
       - name: "install npm@latest"
         run: npm i -g npm@latest
 
-      - name: Go to frontend folder
-        run: cd frontend/ && ls
-
       - name: "install dependencies"
-        uses: frontend/bahmutov/npm-install@v1
+        uses: cd frontend && npm ci
 
       - name: "lint code"
         run: cd frontend && npm run lint --if-present
