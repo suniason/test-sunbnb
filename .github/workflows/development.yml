@@ -47,7 +47,7 @@ jobs:
         run: cd frontend/ && ls
 
       - name: "install dependencies"
-        run: cd frontend && bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1
 
       - name: "lint code"
         run: cd frontend && npm run lint --if-present
