@@ -1,0 +1,24 @@
+name: Development
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  laravel-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install PHP versions
+        uses: shivammathur/setup-php@v2
+
+      - name: Show dir
+        run: pwd && ls
+      - name: PHP Version
+        run: php --version
+
+      - name: Install Dependencies
+        run: composer install
+
+      - name: Run Pint
+        run: vendor/bin/pint --test -v
