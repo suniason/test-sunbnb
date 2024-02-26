@@ -16,8 +16,8 @@ To run SunBNB locally, follow these steps:
 
 ### Developers:
 
-> Aparri, John Vergil
-> Cabañero, Rian Francis
-> Encabo, Cara Carmel
-> Galvez, Brett Josef
-> Rosalijos, Abigail Faith
+- Aparri, John Vergil
+- Cabañero, Rian Francis
+- Encabo, Cara Carmel
+- Galvez, Brett Josef
+- Rosalijos, Abigail Faith
