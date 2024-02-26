@@ -11,29 +11,29 @@ jobs:
       - name: "checkout repository"
         uses: actions/checkout@v2
 
-      - name: Go to backend folder
-        run: cd backend/
-
       - name: Install PHP versions
         uses: shivammathur/setup-php@v2
+
+      - name: Go to backend folder
+        run: ls && cd backend
 
       - name: PHP Version
         run: php --version
 
+      - name: Redirect to backend folder
+        run: pwd
+
       - name: Install Dependencies
-        run: composer install
+        run: cd backend && composer install
 
       - name: Run Pint
-        run: vendor/bin/pint --test -v
+        run: cd backend && vendor/bin/pint --test -v
 
   nextjs-tests:
     runs-on: ubuntu-latest
     steps:
       - name: "checkout repository"
         uses: actions/checkout@v2
-
-      - name: Go to frontend folder
-        run: cd frontend/
 
       - name: "setup node"
         uses: actions/setup-node@v2.1.5
@@ -45,6 +45,8 @@ jobs:
 
       - name: "install dependencies"
         uses: bahmutov/npm-install@v1
+        with:
+          working-directory: frontend
 
       - name: "lint code"
-        run: npm run lint --if-present
+        run: cd frontend && npm run lint --if-present
