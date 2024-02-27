@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 // accesible through {server_uri}/api/v1/
 Route::get('/', function () {
-    return 'Hello World';
+    return 'Hello World hi';
 });
 
 Route::apiResource('products', ProductController::class);
