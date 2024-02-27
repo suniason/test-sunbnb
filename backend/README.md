@@ -6,6 +6,7 @@ This guide will walk you through the process of setting up the development envir
 
 -   PHP >=8.1
 -   Composer
+-   Git installed on your machine
 -   Visual Studio Code (optional but recommended)
 
 ## Getting Started
@@ -16,7 +17,7 @@ This guide will walk you through the process of setting up the development envir
 composer install
 ```
 
-2. To run `Laravel Pint` on save, Go to the `Extensions` in vscode and install [Laravel Pint by Open Southerners](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint). Then, create a `.vscode` folder in the root of backend folder and add the following files:
+2. To execute `Laravel Pint` on save, Go to the `Extensions` in vscode and install [Laravel Pint by Open Southerners](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint). Then, create a `.vscode` folder in the root of backend folder and add the following files:
     - `extensions.json`
     - `settings.json`
 
@@ -39,4 +40,16 @@ In the `settings.json`, add this:
 		"editor.formatOnSave": true
 	}
 }
+```
+
+3. Run the following command to publish all our schema to the database.
+
+```
+php artisan migrate
+```
+
+4. To start the server, execute the command:
+
+```
+php artisan serve
 ```
