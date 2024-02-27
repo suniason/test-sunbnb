@@ -8,7 +8,7 @@ Why are these changes necessary?
 
 ## Related Task/Issue
 
-Link to the related task or issue that prompted these changes.e.
+Link to the related task or issue that prompted these changes.
 
 ## Screenshots
 

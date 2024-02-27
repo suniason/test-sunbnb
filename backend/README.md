@@ -42,7 +42,13 @@ In the `settings.json`, add this:
 }
 ```
 
-3. Run the following command to publish all our schema to the database.
+3. Create a `.env` and add the necessary configuration, including database connection details, application key, and any other environment-specific settings. You can generate the application key using the following Artisan command:
+
+```
+php artisan key:generate
+```
+
+4. Run the following command to publish all our schema to the database.
 
 ```
 php artisan migrate
