@@ -19,6 +19,7 @@ class Kernel extends HttpKernel {
         Middleware\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         Middleware\TrimStrings::class,
+        Middleware\CorsMiddleware::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
 

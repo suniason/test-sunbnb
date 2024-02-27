@@ -6,6 +6,14 @@
 - **Backend**: Laravel
 - **Database**: MySQL
 
+## Prerequisites
+
+- PHP >=8.1
+- Composer
+- Node.js installed on your machine
+- Git installed on your machine
+- Visual Studio Code (optional but recommended)
+
 ## Getting Started
 
 To run SunBNB locally, follow these steps:
