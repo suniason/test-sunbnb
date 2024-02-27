@@ -4,9 +4,9 @@ This guide will walk you through the process of setting up the development envir
 
 ## Prerequisites
 
--   Node.js installed on your machine
--   Git installed on your machine
--   Visual Studio Code (optional but recommended)
+-   [Node.js](https://nodejs.org/en/download)
+-   [Git](https://git-scm.com/downloads) installed in your machine
+-   [Visual Studio Code](https://code.visualstudio.com/) (optional but recommended)
 
 ## Getting Started
 

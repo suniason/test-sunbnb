@@ -4,10 +4,10 @@ This guide will walk you through the process of setting up the development envir
 
 ## Prerequisites
 
--   PHP >=8.1
--   Composer
--   Git installed on your machine
--   Visual Studio Code (optional but recommended)
+-   [PHP >=8.1](https://www.php.net/downloads.php)
+-   [Composer](https://getcomposer.org/download)
+-   [Git](https://git-scm.com/downloads) installed in your machine
+-   [Visual Studio Code](https://code.visualstudio.com/) (optional but recommended)
 
 ## Getting Started
 
