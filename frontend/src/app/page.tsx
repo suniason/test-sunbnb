@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Title from "./components/Title";
 import Button from "./components/Button";
+import HiComponent from "./components/HiComponent";
 
 const Home: React.FC = () => {
     const handleClick = (): void => {
