@@ -6,9 +6,10 @@ import Button from "./components/Button";
 
 const Home: React.FC = () => {
 
-    const handleClick = () => {
+    const handleClick = (): void => {
         alert("Welcome!");
     };
+    
 
     return (
         <main className="flex min-h-screen flex-col items-center p-24">
